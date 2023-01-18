@@ -46,6 +46,10 @@ const { image, name, location } = defineProps(["image", "name", "location"]);
   line-height: .9rem;
 }
 
+.n-card_decription h3 {
+  margin-bottom: -.4rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .n-card {
     border-color: #2a2e38;
