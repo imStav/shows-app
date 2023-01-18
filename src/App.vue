@@ -15,8 +15,8 @@ import RickAndMortyCards from "./components/RickAndMortyCards.vue";
       </template>
 
       <template #fallback>
-        <div>
-          <p>Loading...</p>
+        <div class="spinner">
+          <n-spin size="large" />
         </div>
       </template>
     </Suspense>
@@ -39,5 +39,10 @@ import RickAndMortyCards from "./components/RickAndMortyCards.vue";
 .heading p {
   font-style: italic;
   margin-top: 0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
 }
 </style>
