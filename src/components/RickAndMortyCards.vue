@@ -74,7 +74,6 @@ watch(page, async () => {
 .fixed {
   position: fixed;
   bottom: 0;
-  background-color: #00000091;
   width: 100%;
   padding-block: 1rem;
   backdrop-filter: blur(10px);
@@ -112,5 +111,17 @@ watch(page, async () => {
     .cards {
         width: 33%;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+  .fixed {
+    background-color: #00000091;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .fixed {
+    background-color: #ffffff91;
+  }
 }
 </style>

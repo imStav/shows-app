@@ -27,8 +27,6 @@ const { image, name, location } = defineProps(["image", "name", "location"]);
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  background-color: #15171d;
-  color: #bac5d4;
   padding: 1rem 1rem;
   border-radius: 10px;
 }
@@ -52,7 +50,15 @@ const { image, name, location } = defineProps(["image", "name", "location"]);
 
 @media (prefers-color-scheme: dark) {
   .n-card {
-    border-color: #2a2e38;
+    background-color: #15171d;
+    color: #bac5d4;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .n-card {
+    background-color: #eef2fe;
+    color: #212935;
   }
 }
 </style>
