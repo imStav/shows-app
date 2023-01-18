@@ -54,10 +54,6 @@ watch(page, async () => {
         >Next</n-button
       >
     </div>
-
-    <!-- <pre>
-            {{ characters }}
-        </pre> -->
   </div>
 </template>
 
@@ -105,7 +101,7 @@ watch(page, async () => {
   transform: scale(.9);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .cards {
         width: 80%;
         grid-template-columns: repeat(1, 1fr);
