@@ -4,7 +4,16 @@ const { image, name, location } = defineProps(["image", "name", "location"]);
 
 <template>
   <div class="n-card">
-      <img :src="image" />
+    <Suspense>
+      <template #default>
+        <img :src="image" />
+      </template>
+
+      <template #fallback>
+        <n-spin size="large" />
+      </template>
+    </Suspense>
+
     <div class="n-card_decription">
       <h3>{{ name }}</h3>
       <p>{{ location }}</p>
