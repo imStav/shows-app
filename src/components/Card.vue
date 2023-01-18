@@ -40,7 +40,7 @@ const { image, name, location } = defineProps(["image", "name", "location"]);
 }
 
 .n-card_decription {
-  width: 66%;
+  width: max-content;
   justify-self: flex-start;
   align-self: center;
   line-height: .9rem;
